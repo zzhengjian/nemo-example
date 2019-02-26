@@ -8,7 +8,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
 yarn.lock
 
 #vscode items
@@ -106,4 +105,3 @@ Thumbs.db
 
 /allure-report
 /allure-results
-package.json
