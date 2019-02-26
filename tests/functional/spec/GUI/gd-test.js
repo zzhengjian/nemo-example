@@ -25,7 +25,7 @@ describe('@GreendotTest@', async function () {
     await home.RegisterCardWaitVisible().click()
     await nemo.utils.waitForJSReady()
     await nemo.driver.getCurrentUrl().then(url =>{        
-        expect(url).to.includes("secure.greendot.com/registers")
+        expect(url).to.includes("secure.greendot.com/register")
     })
   })
 
