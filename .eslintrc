@@ -1,0 +1,26 @@
+{
+  "extends": ["eslint:recommended", "standard", "plugin:flowtype/recommended"],
+  "parser": "babel-eslint",
+  "plugins": [ "flowtype" ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "amd": false,
+    "mocha": true,
+    "jasmine": false
+  },
+  "ecmaFeatures": {"experimentalObjectRestSpread": true},
+  "globals": {
+    "allure": true
+  },
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "vars-on-top": 0,
+    "no-mixed-spaces-and-tabs": "error",
+    "key-spacing": ["error", { "mode": "strict" }],
+    "keyword-spacing": "error",
+    "no-undef":"error",
+    "no-console":"off",
+    "camelcase":"off"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "plugins": {
+    "view": {
+      "module": "nemo-view",
+      "arguments": [
+        "path:locator"
+      ]
+    },
+    "table": {
+      "module": "path:plugins/WebTable"
+    },
+    "utils": {
+      "module": "path:plugins/Utils"
+    }  
+  },
+  "data": {
+    "baseUrl": "https://www.greendot.com/"
+  },
+  "output": {
+            "reports": "path:report",
+            "listeners": "require:./listener/listeners"
+        },
+  "profiles": {
+    "base": {
+      "tests": "path:spec/GUI/**/*.js",
+      "maxConcurrent": "1",
+      "driver":{
+        "browser": "chrome"
+      },
+      "mocha": {
+        "timeout": 600000,
+        "reporter": "mochawesome",
+        "retries": 0,
+        "require": [
+					"babel-register",
+					"babel-polyfill"
+				],
+        "grep": "argv:grep",
+        "reporterOptions": {
+          "showPending": false
+        }
+      }
+    },
+    "chrome": {
+      "tests": "path:spec/GUI/**/*.js",
+      "driver":{
+        "browser": "chrome"
+      }
+    },
+    "phantomjs": {
+      "driver":{
+          "browser": "phantomjs"
+      },
+      "tests": "path:spec/API/**/*.js"
+    }
+  }
+}

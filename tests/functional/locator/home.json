@@ -1,0 +1,11 @@
+{    
+    "RegisterCard":{
+      "type": "css",
+      "locator": "div.page-navigation__buttons > a:nth-child(1)"
+    },
+  
+    "OpenAnAccount": {
+      "type": "css",
+      "locator": "div.page-navigation__buttons > a:nth-child(2)"
+    }
+  }

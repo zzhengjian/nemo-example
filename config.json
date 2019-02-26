@@ -1,0 +1,9 @@
+{
+  "reporterEnabled": "mochaawesome, mocha-allure-reporter",
+  "mochaawesomeReporterOptions": {
+      "output": "path:report"
+  },
+  "mochaAllureReporterReporterOptions": {
+    "output": "path:report"
+}
+}

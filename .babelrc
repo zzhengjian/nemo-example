@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {
+      "targets":{
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "add-module-exports",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread"
+  ],
+  "retainLines": true,
+  "sourceMaps": "both"
+}
